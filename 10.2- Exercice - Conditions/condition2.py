@@ -7,3 +7,18 @@
 #                       Sinon, elle est bissextile.
 #
 # Résultat attendu : Un message affichant "Année bissextile" ou "Année non bissextile"
+
+annee = 2019
+multiple100 = (annee*4)/100
+multiple400 = (annee*4)/400
+multiple4 = annee/4
+
+if multiple4.is_integer():
+    if multiple100.is_integer():
+        if multiple400.is_integer():
+            print('Année ',annee,' biesxtile')
+        else :
+            print('Année ',annee,' non biesxtile')
+    print('Année ',annee,' biesxtile')
+else:
+    print('Année ',annee,' non biesxtile')
